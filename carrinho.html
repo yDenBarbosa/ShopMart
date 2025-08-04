@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Shop Mart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <h1 class="fs-5 mb-0"><a class="text-decoration-none fs-5 text-white me-3" href="./index.html">Shop
+                        Mart</a></h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./produtos.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contato.html">Contatos</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-secondary"><a href="./carrinho.html"
+                            class="text-white text-decoration-none">Carrinho <span
+                                class="badge text-secondary bg-white">2</span></a></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-primary py-5 text-center text-white">
+        <div class="container">
+            <h2 class="display-5 fw-semibold">Seu carrinho</h2>
+            <p class="lead">Revise seus itens antes de finalizar a compra+</p>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 table-reponsive">
+
+                <table class="table align-middle ">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col">Produtos</th>
+                            <th class="text-center" scope="col" style="width: 130px;">Qtde</th>
+                            <th class="text-center" scope="col">Preço</th>
+                            <th class="text-center" scope="col">Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fone de Ouvido Bluetooth</td>
+                            <td class="text-center">
+                                <div class="input-group">
+                                    <button class="btn btn-outline-secondary py-0">-</button>
+                                    <input type="number" class="form-control text-center" value="1" min="1">
+                                    <button class="btn btn-outline-secondary py-0">+</button>
+                                </div>
+                            </td>
+                            <td class="text-center">R$ 99,99</td>
+                            <td class="text-center">R$ 99,99</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Smartwatch Pro</td>
+                            <td class="text-center">
+                                <div class="input-group">
+                                    <button class="btn btn-outline-secondary py-0">-</button>
+                                    <input type="number" class="form-control text-center" value="1" min="1">
+                                    <button class="btn btn-outline-secondary py-0">+</button>
+                                </div>
+                            </td>
+                            <td class="text-center">R$ 249,99</td>
+                            <td class="text-center">R$ 249,99</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Headset Bluetooth</td>
+                            <td class="text-center">
+                                <div class="input-group">
+                                    <button class="btn btn-outline-secondary py-0">-</button>
+                                    <input type="number" class="form-control text-center" value="1" min="1">
+                                    <button class="btn btn-outline-secondary py-0">+</button>
+                                </div>
+                            </td>
+                            <td class="text-center">R$ 129,99</td>
+                            <td class="text-center">R$ 129,99</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h5">Resumo</h2>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item d-flex justify-content-between">
+                                Subtotal<span class="fw-bold">R$ 479,97</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                Frete<span class="fw-bold">R$ 8,67</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between fw-bold">
+                                Total<span>R$ 488,64</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="bg-dark d-flex justify-content-center">
+        <footer class="container row py-5 mt-5">
+            <div class="col-12 col-lg-3 mb-5">
+                <h3 class="text-white">Shop Mart</h3>
+                <p class="text-white">© 2021</p>
+            </div>
+
+            <div class="offset-lg-1 col-12 col-lg-3 mb-5 mt-">
+                <h4 class="text-white">Menu Alternativo</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Produtos</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-lg-3 mb-5">
+                <h4 class="text-white">Redes Sociais</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Instagram</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Facebook</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">X</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Linkedin</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-lg-2 mb-5">
+                <h4 class="text-white">Contato</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">(21) 98654-8985</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">WhatsApp</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">suporte@shopmart.com.br</a>
+                    </li>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>

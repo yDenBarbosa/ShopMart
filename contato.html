@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Shop Mart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <h1 class="fs-5 mb-0"><a class="text-decoration-none fs-5 text-white me-3" href="./index.html">Shop
+                        Mart</a></h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./produtos.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contato.html">Contatos</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-secondary"><a href="./carrinho.html" class="text-white text-decoration-none">Carrinho <span
+                            class="badge text-secondary bg-white">2</span></a></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-primary py-5 text-center text-white">
+        <div class="container">
+            <h2 class="display-5 fw-semibold">Fale conosco</h2>
+            <p class="lead">Tire dúvidas, envie sugestões ou apenas diga oi ✌️</p>
+        </div>
+    </section>
+
+    <main class="container my-5">
+        <div class="row">
+
+            <div class="col-12 col-lg-6">
+                <h3>Nossa localização</h3>
+
+                <div class="map-responsive">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.779932109792!2d-46.724310724667184!3d-23.648050978740276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce510e8d3746ed%3A0x3e9f3a76e1ebfb69!2sSenai%20Santo%20Amaro%20-%20Su%C3%AD%C3%A7o-Brasileira!5e0!3m2!1spt-BR!2sbr!4v1753741026107!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="accordion accordion-flush mt-4" id="accordionFlushExample">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Endereço completo
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>R. Bento Branco de Andrade Filho, 379 - Santo Amaro, São Paulo - SP, 04757-000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Horário de atendimento
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>Segunda a Sexta - 09h às 18h</p>
+                                <p>Sábado - 10h às 17h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                <h3>Envie sua mensagem</h3>
+                <form class="row g-3" novalidate>
+                    <div class="col-12">
+                        <label for="inputEmail4" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="inputEmail4" required>
+                        <div class="invalid-feedback">Informe seu nome</div>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" required>
+                        <div class="invalid-feedback">Informe seu email</div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="inputState" class="form-label">Assuntos</label>
+                        <select id="inputState" class="form-select">
+                            <option value="" selected disabled>Escolha</option>
+                            <option value="1">Dúvida sobre o produto</option>
+                            <option value="2">Suporte Técnico</option>
+                            <option value="3">Sugestão</option>
+                            <option value="4">Outro</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea name="" id="mensagem" placeholder="Digite sua mensagem" class="form-control" rows="5" required></textarea>
+                        <div class="invalid-feedback">Informe seu texto</div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+
+    <div class="bg-dark d-flex justify-content-center">
+        <footer class="container row py-5 mt-5">
+            <div class="col-12 col-lg-3 mb-5">
+                <h3 class="text-white">Shop Mart</h3>
+                <p class="text-white">© 2021</p>
+            </div>
+
+            <div class="offset-lg-1 col-12 col-lg-3 mb-5 mt-">
+                <h4 class="text-white">Menu Alternativo</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Produtos</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-lg-3 mb-5">
+                <h4 class="text-white">Redes Sociais</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Instagram</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Facebook</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">X</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Linkedin</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-lg-2 mb-5">
+                <h4 class="text-white">Contato</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">(21) 98654-8985</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">WhatsApp</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">suporte@shopmart.com.br</a>
+                    </li>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event){
+            if (!this.checkValidity()){
+                event.preventDefault()
+                this.classList.add("was-validated")
+            }
+        })
+    </script>
+
+</body>
+
+</html>
